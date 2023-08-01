@@ -1,14 +1,17 @@
-.main-container{
+.main-container {
     height: 90vh;
     overflow: auto;
     width: 100%;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
 }
-.products-container{
+
+.products-container {
     width: 100%;
     display: flex;
 }
 
-.products-list-container{
+.products-list-container {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -16,18 +19,19 @@
     list-style-type: none;
     padding: 0;
 }
-@media screen and (max-width:768px) {
-    .products-list-container{
+
+@media screen and (max-width: 768px) {
+    .products-list-container {
         width: 100%;
     }
 }
 
-.card{
-    width: 16rem
+.card {
+    width: 16rem;
 }
 
-@media screen and (max-width:768px) {
-    .card{
+@media screen and (max-width: 768px) {
+    .card {
         width: 48%;
     }
 }
@@ -35,16 +39,17 @@
 .card:hover {
     transform: scale(1.02);
     transition: all 0.3s ease;
-  }
+}
 
-.loader-container{
+.loader-container {
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
 }
 
-
-.card-img-top{
+.card-img-top {
     max-height: 240px;
 }

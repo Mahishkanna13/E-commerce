@@ -4,17 +4,17 @@
 
 <div class="success-message-container text-center" *ngIf="isSuccess">
   <div class="success-message card p-4">
-    <h1 class="text-success pb-4">Order Placed Successfully!</h1>
+    <h1 class="text-white pb-4">Order Placed Successfully!</h1>
     <div class="d-flex">
       <button class="btn btn-outline-success w-50" routerLink="/feedback" (click)="onContinue()">Feedback</button>
-      <button class="btn btn-outline-primary w-50" routerLink="/home" (click)="onContinue()">Continue Shopping</button>
+      <button class="orange-button w-50" routerLink="/home" (click)="onContinue()">Continue Shopping</button>
     </div>
   </div>
 </div>
 
 <div class="update-add-product-container" *ngIf="!(isLoading || isSuccess)">
   <div class="back-button text-start">
-    <button routerLink="/product-details/{{routerId}}" class="btn btn-primary mt-2"><i
+    <button routerLink="/product-details/{{routerId}}" class="orange-button mt-2"><i
         class="fa fa-arrow-left"></i></button>
   </div>
   <div class="card p-4 m-4">
@@ -89,7 +89,8 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary mt-4 w-100" [disabled]="regForm.invalid">Confirm Order</button>
+      <button type="submit" class="orange-button mt-4 w-100 " [disabled]="regForm.invalid">Confirm Order</button>
+
     </form>
   </div>
 </div>

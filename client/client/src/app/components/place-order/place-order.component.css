@@ -5,11 +5,16 @@
     height: 90vh;
     width: 100%;
     overflow: auto;
+    background-color: black;
   }
 
-  .card{
+  .card {
+    background-color: black;
+    color: white;
     width: 50%;
-  }
+    border: 1px solid white; /* Set the border color to white */
+}
+
   @media screen and (max-width:768px) {
     .card{
         width: 90%;
@@ -48,4 +53,16 @@
 .text-success{
   font-size: 36px;
   font-weight: bold;
+}
+/* CSS for the orange button */
+.orange-button {
+  background-color: orange; /* Set the background color to orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.orange-button:hover {
+  background-color: darkorange;
 }

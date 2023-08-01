@@ -1,19 +1,42 @@
-.cotegory-container{
+.cotegory-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     overflow: auto;
-}
-.card{
-    width: 100%;
-    padding: 40px;
+    background-color: black;
+    color: white;
 }
 
-.loader-container{
-    height: 900vh;
+.card {
+    width: 100%;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.loader-container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    color: white;
 }
+/* Orange Button */
+.orange-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* On hover, darken the background color */
+  .orange-button:hover {
+    background-color: darkorange;
+  }
+  

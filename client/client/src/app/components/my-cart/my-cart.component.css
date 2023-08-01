@@ -1,14 +1,17 @@
-.cartlist-container{
+.cartlist-container {
     height: 90vh;
     overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
 }
-.cart-list{
+
+.cart-list {
     width: 100%;
     list-style-type: none;
     padding: 0 20px;
 }
 
-.cart-item{
+.cart-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,38 +21,55 @@
     cursor: pointer;
     margin: 0;
 }
+
 .cart-item:hover {
     box-shadow: 0 0 20px #e2e2e2;
     border: none;
     transform: scale(1.01);
     transition: all 0.3s ease;
-  }
-.cart-details{
+}
+
+.cart-details {
     display: flex;
     align-items: center;
 }
-.image{
+
+.image {
     width: 10%;
 }
+
 @media screen and (max-width:768px) {
-    .image{
+    .image {
         width: 100px;
     }
 }
 
-.loader-container{
+.loader-container {
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.img-fluid{
+.img-fluid {
     width: 30%;
 }
+
 @media screen and (max-width:768px) {
-    .img-fluid{
+    .img-fluid {
         width: 100%;
     }
+}
+
+/* CSS for the orange button */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
 }

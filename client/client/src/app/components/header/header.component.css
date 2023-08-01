@@ -6,22 +6,39 @@
   width: 100%;
   /* flex-direction: column; */
   justify-content: space-between;
+  background-color: orange; /* Set the background color to orange */
+  color: white; /* Set the font color to white */
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
   }
 }
 
 .navbar-nav .nav-link.active {
-  background-color: rgb(108, 95, 252) !important;
+  background-color: white !important;
   border-radius: 6px;
   padding: 8px 30px;
-  color: #fff;
+  color: black; /* Set the font color to white */
 }
 
-.image-logo{
+.image-logo {
   width: 50px;
   margin-right: 40px;
+}
+
+/* CSS styles for navbar dropdown */
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: orange; /* Set the background color to orange */
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: white; /* Set the font color to white */
+  transition: none; /* Remove any transition effects */
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: transparent; /* Set the hover background color to transparent */
+  color: white; /* Set the hover font color to white (optional) */
 }

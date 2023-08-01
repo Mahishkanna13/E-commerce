@@ -4,7 +4,7 @@
 
 <div *ngIf="!isLoading">
     <div class="main-container p-4" *ngIf="!isUpdate">
-        <h1 style="color: rgb(98, 90, 252); font-size: 38px; font-weight: bold;" class="mb-4">Products</h1>
+        <h1 style="color: white; font-size: 38px; font-weight: bold;" class="mb-4">Products</h1>
         <ul class="products-list-container ">
             <li class="card mb-4 p-2" *ngFor="let product of  filterData()">
                 <img class="card-img-top" src="{{product.image}}" alt="{{product.name}}">

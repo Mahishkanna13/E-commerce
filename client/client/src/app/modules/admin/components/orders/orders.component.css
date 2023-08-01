@@ -1,21 +1,31 @@
-.container{
+.container {
     height: 90vh;
     overflow: auto;
     padding: 20px 20px;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
 }
 
-.loader-container{
+.loader-container {
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
 }
 
-.img-fluid{
+.img-fluid {
     width: 30%;
 }
-@media screen and (max-width:768px) {
-    .img-fluid{
+
+@media screen and (max-width: 768px) {
+    .img-fluid {
         width: 100%;
     }
+}
+.card-body {
+    background-color: black; /* Set the background color to black */
+    color: white;
+    border: 1px solid white; /* Add a white border */
 }
