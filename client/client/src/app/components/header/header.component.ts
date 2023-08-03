@@ -41,4 +41,5 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['/home'])
     this.isAdmin = false
   }
+  
 }

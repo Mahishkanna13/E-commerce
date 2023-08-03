@@ -18,6 +18,7 @@ export class PaymentComponent {
   constructor(private http:HttpClient){
     this.http.get<any[]>('http://localhost:5100/payments').subscribe((response) => {
       this.data = response
+      this.data.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
     })
     this.statusForm = new FormGroup({
       status: new FormControl('pending'),

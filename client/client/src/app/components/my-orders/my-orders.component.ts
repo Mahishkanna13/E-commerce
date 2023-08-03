@@ -16,6 +16,7 @@ export class MyOrdersComponent {
     this.http.get<any[]>(`http://localhost:5100/my-orders/${userId}`).subscribe((res: any) => {
       if (res.status !== 404) {
         this.myOrdersList = res;
+        this.myOrdersList.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
         this.isLoading = false;
       } else {
         this.myOrdersList = []

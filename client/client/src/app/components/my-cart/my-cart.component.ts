@@ -10,12 +10,14 @@ import { Router } from '@angular/router';
 export class MyCartComponent {
   public cartList: any[] = [];
   public isLoading = false
+  public totalItems = 0;
 
   constructor(private http: HttpClient, private route: Router) {
     this.isLoading = true
     const userId = localStorage.getItem('userId')
     this.http.get<any[]>(`http://localhost:5100/cart/${userId}`).subscribe(data => {
       this.cartList = data;
+      this.totalItems = this.cartList.length; 
       this.isLoading = false
     });
     const jwtToken = localStorage.getItem('adminJwtToken')
@@ -36,6 +38,7 @@ export class MyCartComponent {
       const userId = localStorage.getItem('userId')
       this.http.get<any[]>(`http://localhost:5100/cart/${userId}`).subscribe(data => {
         this.cartList = data;
+        this.totalItems = this.cartList.length;
         this.isLoading = false
       });
     });

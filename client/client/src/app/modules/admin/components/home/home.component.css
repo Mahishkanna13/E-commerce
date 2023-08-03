@@ -1,5 +1,5 @@
 .main-container {
-    height: 90vh;
+    height: 100vh;
     overflow: auto;
     width: 100%;
     background-color: black; /* Set the background color to black */
@@ -42,7 +42,7 @@
 }
 
 .loader-container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
