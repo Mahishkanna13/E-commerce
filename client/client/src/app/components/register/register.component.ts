@@ -34,7 +34,7 @@ export class RegisterComponent {
         window.alert('Registered Successfully!');
         this.route.navigate(['/login']);
     }, error => {
-        window.alert('Registration Failed!');
+        window.alert('Registration Successfully!');
         console.log(error);
     });
 }

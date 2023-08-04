@@ -16,7 +16,9 @@ export class LandingPageComponent {
   public isLoading = false;
   electronicsSelected = '';
   clothesSelected = '';
-  gadgetsSelected = false;
+  gadgetsSelected = '';
+  AccessoriesSelected='';
+  HomeAppliancesSelected=false;
 
   regForm: FormGroup;
 
@@ -50,10 +52,12 @@ export class LandingPageComponent {
         product.productname.toLowerCase().includes(this.searchInput.toLowerCase());
 
       const categoryMatch =
-        ((!this.electronicsSelected && !this.clothesSelected && !this.gadgetsSelected) ||
+        ((!this.electronicsSelected && !this.clothesSelected && !this.gadgetsSelected && !this.AccessoriesSelected && !this.HomeAppliancesSelected) ||
           (this.electronicsSelected && product.category === 'Mobile') ||
           (this.clothesSelected && product.category === 'Clothing') ||
-          (this.gadgetsSelected && product.category === 'Shoes'));
+          (this.gadgetsSelected && product.category === 'Shoes') ||
+          (this.AccessoriesSelected && product.category === 'Accessories') ||
+          (this.HomeAppliancesSelected && product.category === 'HomeAppliances'));
 
       return searchMatch && categoryMatch;
     });
